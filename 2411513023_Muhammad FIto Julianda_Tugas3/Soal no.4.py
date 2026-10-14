@@ -1,0 +1,3 @@
+Penggunaan Manager(): Digunakan saat membutuhkan struktur data kompleks (seperti dict atau list) yang perlu diakses secara aman oleh banyak proses secara bersamaan, misalnya mengelola status antrean pengguna secara dinamis. Manager() memberikan kemudahan fleksibilitas tinggi, namun performanya lebih lambat karena adanya overhead komunikasi antar-proses (proxy object).
+
+Penggunaan Value/Array: Digunakan saat hanya membutuhkan berbagi tipe data dasar (seperti int, float, atau array numerik berukuran tetap) untuk komputasi performa tinggi. Pendekatan ini menawarkan performa jauh lebih cepat karena mengakses shared memory langsung di tingkat C, meski mengorbankan kemudahan struktur data
